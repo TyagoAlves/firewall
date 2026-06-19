@@ -6,13 +6,13 @@ Firewall corporativo plug & play baseado em FreeBSD + PF (Packet Filter).
 
 ```bash
 # Na maquina FreeBSD recem-instalada:
-curl -sL https://raw.githubusercontent.com/<SEU_USUARIO>/firewall-corp/main/firewall-bootstrap.sh | sudo sh
+curl -sL https://raw.githubusercontent.com/TyagoAlves/firewall/main/firewall-bootstrap.sh | sudo sh
 ```
 
 Ou especificando interfaces:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/<SEU_USUARIO>/firewall-corp/main/firewall-bootstrap.sh | sudo sh -s -- em0 em1 10.0.0.0/8
+curl -sL https://raw.githubusercontent.com/TyagoAlves/firewall/main/firewall-bootstrap.sh | sudo sh -s -- em0 em1 10.0.0.0/8
 ```
 
 ## Funcionalidades
@@ -28,7 +28,7 @@ curl -sL https://raw.githubusercontent.com/<SEU_USUARIO>/firewall-corp/main/fire
 ## Estrutura
 
 ```
-firewall-corp/
+firewall/
   firewall-bootstrap.sh   # Script principal plug & play
   apply-config.sh         # Reaplica configuracao do firewall
   pf.conf                 # Regras do Packet Filter

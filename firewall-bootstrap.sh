@@ -33,7 +33,7 @@ pkg install -y git py311-awscli bash curl 2>/dev/null
 echo "[02/10] Clonando repositorio..."
 cd /root
 rm -rf firewall-corp
-git clone https://github.com/seu-usuario/firewall-corp.git /root/firewall-corp 2>/dev/null || {
+git clone https://github.com/TyagoAlves/firewall.git /root/firewall-corp 2>/dev/null || {
   echo "Git clone falhou, usando configuracao local"
   mkdir -p /root/firewall-corp
   cd /root/firewall-corp
